@@ -10,6 +10,7 @@ import { getPicklistValues, getObjectInfo } from 'lightning/uiObjectInfoApi';
 const columns = [
     { label: 'Name', fieldName: 'Name', editable: true },
     { label: 'Phone', fieldName: 'Phone', type: 'phone', editable: true },
+    { label: '年間売り上げ', fieldName: 'AnnualRevenue', type: 'currency', typeAttributes: { currencyCode: 'JPY' }, editable: true },
     {
         label: 'Type', fieldName: 'Type', type: 'picklistColumn', editable: true, typeAttributes: {
             placeholder: 'Choose Type', options: { fieldName: 'pickListOptions' }, 
